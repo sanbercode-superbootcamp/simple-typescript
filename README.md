@@ -1,11 +1,11 @@
-Event & Stream
+Basic Typescript
 ===================
 
 Content
 -------
 ### Repository Anatomy
 
-- `dist` - output compiled ts code used
+- `dist` - output folder where the compiled ts code stored
 - `src` - source code used on training
 
 Getting Started
