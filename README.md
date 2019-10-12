@@ -1,21 +1,17 @@
-Basic Typescript
-===================
+# Tugas 6 Calculator w/ Typescript
 
-Content
--------
-### Repository Anatomy
+## Introduction
+This task is about creating calculator functions which is using Typescript for class and module.
 
-- `dist` - output folder where the compiled ts code stored
-- `src` - source code used on training
+> npm install
 
-Getting Started
----------------
+> npm start
+- for building the Typescript file into dist folder
 
-``` bash
-npm install
-npm run build
-npm start
-```
-Make sure you include folder of the compiled code at `.gitignore`
+> npm test
+- for running the test file 
 
-The presentation slide can be seen [here](https://drive.google.com/open?id=1syJeebgaZM5UsN1WX_Jela1lkUAKYU92EkKVeXETShA)
+
+Keywords : Typescript, Chai, Mocha.
+---
+***created by arifintahu***
