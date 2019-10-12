@@ -5,7 +5,8 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node ."
+    "start": "npm run build & node dist/calculator.js",
+    "test" : "mocha"
   },
   "repository": {
     "type": "git",
