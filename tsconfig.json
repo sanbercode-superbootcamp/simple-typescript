@@ -4,6 +4,7 @@
     "rootDir": "./src", // define root directory
     "outDir": "./dist", // output compiler
   },
+  "include": ["*/**.ts"],
   "exclude": [
     "node_modules"
   ]

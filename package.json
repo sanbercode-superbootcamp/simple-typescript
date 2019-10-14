@@ -4,8 +4,8 @@
   "description": "Simple case of Basic Typescript",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node ."
+    "start": "node .",
+    "dev": "tsc -w"
   },
   "repository": {
     "type": "git",
