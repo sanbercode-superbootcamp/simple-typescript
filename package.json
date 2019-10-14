@@ -1,22 +1,15 @@
 {
-  "name": "simple-typescript",
+  "name": "challenge-simple-typescript",
   "version": "1.0.0",
-  "description": "Simple case of Basic Typescript",
+  "description": "",
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node ."
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sanbercode-superbootcamp/simple-typescript.git"
-  },
-  "author": "",
+  "author": "hasannabil",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sanbercode-superbootcamp/simple-typescript/issues"
-  },
-  "homepage": "https://github.com/sanbercode-superbootcamp/simple-typescript#readme",
   "dependencies": {
     "typescript": "^3.6.4"
   }
