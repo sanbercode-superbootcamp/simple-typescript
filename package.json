@@ -1,23 +1,13 @@
 {
-  "name": "simple-typescript",
+  "name": "typescript",
   "version": "1.0.0",
-  "description": "Simple case of Basic Typescript",
-  "main": "./dist/index.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node ."
+    "build": "tsc index.ts",
+    "test": "mocha",
+    "start": "npm run build & node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sanbercode-superbootcamp/simple-typescript.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sanbercode-superbootcamp/simple-typescript/issues"
-  },
-  "homepage": "https://github.com/sanbercode-superbootcamp/simple-typescript#readme",
-  "dependencies": {
-    "typescript": "^3.6.4"
-  }
+  "author": "hilmiID",
+  "license": "ISC"
 }
