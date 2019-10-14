@@ -1,28 +1,72 @@
-enum STATUS {
-  PENDING,
-  ONGOING,
-  DELIVERED
-}
+// Input calculation
+class addin { 
+    value1: number;
+    value2: number;
+    result: number;
+    
+    constructor(a:number, b:number) { 
+       this.value1 = a;
+       this.value2 = b;
+       this.result = a + b;
+    } 
+ } 
+ class subin { 
+    value1: number;
+    value2: number;
+    result: number;
+    
+    constructor(a:number, b:number) { 
+       this.value1 = a;
+       this.value2 = b;
+       this.result = a - b;
+    } 
+ } 
+class mulin { 
+    value1: number;
+    value2: number;
+    result: number;
+    
+    constructor(a:number, b:number) { 
+       this.value1 = a;
+       this.value2 = b;
+       this.result = a * b;
+    } 
+} 
+class divin { 
+    value1: number;
+    value2: number;
+    result: number;
+    
+    constructor(a:number, b:number) { 
+       this.value1 = a;
+       this.value2 = b;
+       this.result = a / b;
+    } 
+} 
 
-interface Package {
-  productName: string;
-  status: STATUS;
+ // Output calculation
+class addout extends addin { 
+    prints():void { 
+       console.log(`Hasil perhitungan ${this.value1} + ${this.value2} = ${this.result}`); 
+    } 
 }
+class subout extends subin { 
+    prints():void { 
+       console.log(`Hasil perhitungan ${this.value1} - ${this.value2} = ${this.result}`); 
+    } 
+ }
+ class mulout extends mulin { 
+    prints():void { 
+       console.log(`Hasil perhitungan ${this.value1} x ${this.value2} = ${this.result}`); 
+    } 
+ }
+ class divout extends divin { 
+    prints():void { 
+       console.log(`Hasil perhitungan ${this.value1} : ${this.value2} = ${this.result}`); 
+    } 
+ }
 
-function isDelivered(product: Package): Boolean {
-  if (product.status === STATUS.DELIVERED) {
-    return true;
-  }
-  return false;
-}
-
-const earphone: Package = {
-  productName: 'earphone X17',
-  status: STATUS.DELIVERED
-}
-
-if (isDelivered(earphone)) {
-  console.log(`${earphone.productName} is already delivered`);
-} else {
-  console.log(`${earphone.productName} is not delivered`);
-}
+let add = new addout(3, 2); add.prints();
+let sub = new subout(3, 2); sub.prints();
+let mul = new mulout(3, 2); mul.prints();
+let div = new divout(3, 2); div.prints();
