@@ -2,10 +2,10 @@
   "name": "simple-typescript",
   "version": "1.0.0",
   "description": "Simple case of Basic Typescript",
-  "main": "./dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node ."
+    "build": "tsc index.ts",
+    "start": "npm run build & node index.js"
   },
   "repository": {
     "type": "git",
