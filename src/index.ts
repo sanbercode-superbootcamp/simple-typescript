@@ -1,28 +1,8 @@
-enum STATUS {
-  PENDING,
-  ONGOING,
-  DELIVERED
-}
+import { Calculator } from "./calculator";
 
-interface Package {
-  productName: string;
-  status: STATUS;
-}
+const calculator = new Calculator();
 
-function isDelivered(product: Package): Boolean {
-  if (product.status === STATUS.DELIVERED) {
-    return true;
-  }
-  return false;
-}
-
-const earphone: Package = {
-  productName: 'earphone X17',
-  status: STATUS.DELIVERED
-}
-
-if (isDelivered(earphone)) {
-  console.log(`${earphone.productName} is already delivered`);
-} else {
-  console.log(`${earphone.productName} is not delivered`);
-}
+console.log(calculator.add(1, 2));
+console.log(calculator.substract(4, 2));
+console.log(calculator.multiply(5, 3));
+console.log(calculator.divide(16, 2));
