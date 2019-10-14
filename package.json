@@ -1,23 +1,13 @@
 {
-  "name": "simple-typescript",
+  "name": "calculator-typescript",
   "version": "1.0.0",
-  "description": "Simple case of Basic Typescript",
-  "main": "./dist/index.js",
+  "description": "tugas calculator typescript",
+  "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sanbercode-superbootcamp/simple-typescript.git"
+    "start": "node ./dist/.",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sanbercode-superbootcamp/simple-typescript/issues"
-  },
-  "homepage": "https://github.com/sanbercode-superbootcamp/simple-typescript#readme",
-  "dependencies": {
-    "typescript": "^3.6.4"
-  }
+  "license": "ISC"
 }
